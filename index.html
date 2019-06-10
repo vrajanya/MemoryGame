@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Memory Game</title>
+        <meta name="Memory Game" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+        <link rel="stylesheet" href="css/app.css">
+        <script defer src="js/app.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1>Matching Game</h1>
+            </header>
+            <section class="score-panel">
+            	<ul class="stars">
+            		<li><i class="fa fa-star greystar"></i></li>
+            		<li><i class="fa fa-star greystar"></i></li>
+            		<li><i class="fa fa-star greystar"></i></li>
+            	</ul>
+            	<span class="moves">0 Moves</span>
+                <ul class="timer">
+                    <li><i class="fa fa-clock-o"></i></li>
+                    <li><span class="hours">00:</span></li>
+                    <li><span class="minutes">00:</span></li>
+                    <li><span class="seconds">00</span></li>
+                </ul>
+                <div class="restart">
+            		<i class="fa fa-repeat"></i>
+            	</div>
+            </section>
+            <main id="mainContent">
+                 <!-- This is where the deck goes -->
+            </main>
+            <div id ="endModal">
+                <div class="modalBox">
+                    <h1>Congratulations!</h1>
+                    <p>You made it in :
+                        <span class='timeModal'></span>
+                        <br> Your rating is :
+                        <span class='ratingModal'></span>
+                        <br> Moves:
+                        <span class='movesModal'></span>
+                    </p>
+                    <button class="btnModal" id="playAgainButton">Play again</button>
+                </div>
+            </div>
+            <div id ="startModal">
+                <div class="startmodalBox">
+                    <h1>Hello there!</h1>
+                    <p>Difficulty Level : Easy</p>
+                    <ul class="rulesList">
+                        <li><i class="fa fa-hand-o-right"> Two or more players. (The game can also be played alone.)</i></li>
+                        <li><i class="fa fa-hand-o-right"> Each move, two cards are flipped over.</i></li>
+                        <li><i class="fa fa-hand-o-right"> If the cards do not match, they are both turned back face down.</i></li>
+                        <li><i class="fa fa-hand-o-right"> If the cards match, they are left face up.</i></li>
+                        <li><i class="fa fa-hand-o-right"> Once all the cards have been played the player with the most matching pairs is the winner.</i></li>
+                    </ul>
+                    <button class="btnModal" id="startButton">Click here to start playing</button>
+                </div>
+            </div>
+            <hr>
+            <footer class="footer">
+                <p>Designed By: Udacity Coded by:
+                <a href="https://github.com/"> Rajanya Vazrala</a>.</p>
+             </footer>
+        </div>
+    </body>
+</html>
