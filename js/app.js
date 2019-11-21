@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //list that holds all of your cards - all global variables
 const cards = [	'fa-diamond','fa-diamond',
+// 	       'fa-diamond','fa-diamond',
 				'fa-paper-plane-o','fa-paper-plane-o',
 				'fa-anchor','fa-anchor',
 				'fa-bolt','fa-bolt',
