@@ -1,6 +1,6 @@
 'use strict';
 
-//to display the cards on page load
+//to display the cards on page load from the cards array
 document.addEventListener('DOMContentLoaded', (event) => {
 	shuffle(cards);
 	createHtmlDeck(cards);
